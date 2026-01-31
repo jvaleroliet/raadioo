@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>.raadioo</title>
+        <meta
+        name="description"
+        content="RAADIOO provides a simple radio player for online 
+        experimental community radios." />
+        <link rel="icon" href="./favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>.raadioo</h1>
+        
+        <div class="container">
+            <audio id="radio-player" controls></audio>
+        </div>
+
+        <div class="container">
+            <select name="radios" id="radio-select">
+                <option value="">--Please choose a raadioo--</option>
+                <optgroup label="UK">
+                    <option value="http://stream-relay-geo.ntslive.net/stream">NTS1</option>
+                    <option value="http://stream-relay-geo.ntslive.net/stream2">NTS2</option>
+                </optgroup>      
+                <optgroup label="Palestine">
+                    <option value="http://n02.radiojar.com/78cxy6wkxtzuv?1634328730=&rj-tok=AAABfIWfHK4AlWz8Q03vJJQdWw&rj-ttl=5">Radio Alhara</option>
+                </optgroup>
+                    <optgroup label="France">
+                    <option value="https://flouka.out.airtime.pro/flouka_a">Radio Flouka</option>
+                </optgroup>
+                <optgroup label="Spanish State">
+                    <option value="https://streamer.radio.co/sd6131729c/listen">Radio Relativa</option>
+                </optgroup>
+                <optgroup label="Germany">
+                    <option value="https://streaming.radio.co/s3699c5e49/listen">Refuge Worldwide</option>
+                    <option value="https://cashmereradio.out.airtime.pro/cashmereradio_b">Cashmere Radio</option>
+                </optgroup>
+                <optgroup label="Belgium">
+                    <option value="https://kioskradiobxl.out.airtime.pro/kioskradiobxl_b">Kiosk Radio</option>
+                </optgroup>
+                </select>
+        </div>
+        <div class="container-bottom">
+            <p>¶ Simple radio player for experimental community radios.</p>
+            <p>¶ Website made by <a a target="_blank" href="https://sonomayrit.xyz">sonomayrit</a> inspired in <a target="_blank" href="https://permacomputing.net/">permacomputing</a> principles.</p>
+        </div>
+    </body>
+    <script>
+        const radioPlayer = document.getElementById("radio-player");
+        const radioSelect = document.getElementById("radio-select");
+
+        radioSelect.addEventListener("change", function() {
+            if (this.value) {
+                radioPlayer.src = this.value;
+                radioPlayer.play();
+            } else {
+                radioPlayer.pause();
+                radioPlayer.src = "";
+            }
+        });
+    </script>
+    </html>
+
+
