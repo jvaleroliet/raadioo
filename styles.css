@@ -31,6 +31,15 @@ h1 {
     font-family: 'Redaction', 'Times New Roman';
 }
 
+h1 a {
+    text-decoration: none;
+    color: black
+} 
+
+h1 a:hover {
+    text-decoration: none;
+} 
+
 h1:hover {
     font-family: 'RedactionItalic';
 }
