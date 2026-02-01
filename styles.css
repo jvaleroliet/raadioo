@@ -1,6 +1,11 @@
 @font-face {
-    font-family: 'SligoilVF'; /*a name to be used later*/
-    src: url('./SligoilVF.ttf'); /*URL to font*/
+    font-family: 'Redaction'; /*a name to be used later*/
+    src: url('./Redaction35-Regular.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'RedactionItalic'; /*a name to be used later*/
+    src: url('./Redaction35-Italic.otf'); /*URL to font*/
 }
 
 
@@ -23,11 +28,11 @@ body {
 h1 {
     font-size: 5em;
     text-align: center;
-    font-family: 'SligoilVF', 'Times New Roman';
+    font-family: 'Redaction', 'Times New Roman';
 }
 
 h1:hover {
-    font-style: italic;
+    font-family: 'RedactionItalic';
 }
 
 .container {

@@ -7,7 +7,7 @@ More and more radios will be added gradually. You can fork and PR to add your fa
 
 It is inspired in permacomputing principles, using native html elements where possible.
 
-- Logo font: [Sligoil](https://velvetyne.fr/fonts/sligoil/)
+- Logo font: [Redaction](https://www.redaction.us/)
 
 - More on permacomputing: [here](https://permacomputing.net/)
 
